@@ -1,0 +1,358 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: "Roboto Slab", serif;
+}
+
+h2 {
+  font-size: 50px;
+  padding: 8px;
+  font-weight: bold;
+  border-bottom: 2px solid #ffc800;
+  font-family: "Dancing Script", cursive;
+  text-shadow: 1px 1px 1px #000;
+  text-align: center;
+}
+button {
+  background-color: transparent;
+  border: 2px solid #ffc800;
+  border-radius: 5px !important;
+  color: #ffc800;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 30px;
+  margin-right: 10px;
+  text-align: center;
+  transition: 0.9s ease;
+  box-shadow: 1px 1px 1px #000;
+  text-transform: capitalize;
+}
+button:hover {
+  background-color: #ffc800;
+  color: #fff;
+}
+
+.home-section {
+  width: 100%;
+  /* height: 100vh; */
+  padding-bottom: 100px;
+  background: linear-gradient(110deg, #fff 68%, #ffc800 32%);
+}
+
+nav #logo {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-left: 30px;
+  text-shadow: 1px 1px 1px #000;
+}
+nav #logo img {
+  margin-bottom: 10px;
+}
+nav #logo span {
+  color: #ffc800;
+}
+nav .nav-item {
+  margin-left: 30px;
+}
+
+nav .nav-item .nav-link {
+  color: #000;
+  font-weight: bold;
+  transition: 0.5s ease;
+}
+nav .nav-item .nav-link:hover {
+  color: #ffc800;
+  text-shadow: 1px 1px 1px #000;
+}
+
+nav #frist-child {
+  color: #ffc800;
+  text-shadow: 1px 1px 1px #000;
+}
+
+nav .icons {
+  margin-right: 30px;
+}
+
+nav .icons i {
+  margin-right: 10px;
+  cursor: pointer;
+}
+@media screen and (max-width: 982px) {
+  .icons {
+    margin-left: 30px;
+  }
+}
+
+/* ________________________________________________________________________ */
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .content {
+  margin-left: 42px;
+  margin-top: 50px;
+}
+
+.home .content h1 {
+  font-size: 65px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #000;
+  margin-bottom: 20px;
+}
+.home .content h1 span {
+  color: #ffc800;
+  font-size: 100px;
+  text-shadow: 1px 1px 1px #000;
+}
+
+/* .home .content #btn{
+    font-size: 17px;
+    font-weight: bold;
+}
+.home .content .btn{
+    background-color: #111;
+    color: #fff;
+    padding: 5px 30px;
+    margin-right: 10px;
+    text-align: center;
+    transition: .9s ease;
+}
+.home .content .btn:hover{
+    background-color: #ffc800;
+    color: #000;
+} */
+
+.home .img img {
+  width: 88%;
+  animation: y 5s linear infinite;
+}
+@keyframes y {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+/* ________________________________________________________________________ */
+
+.offer {
+  padding: 60px 0;
+}
+/* .offer h2{
+    font-size: 50px;
+    padding: 8px;
+    font-weight: bold;
+    border-bottom: 2px solid #ffc800;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 1px #000;
+} */
+.offer .top-icons {
+  padding: 10px 0 20px 0;
+  text-align: center;
+}
+
+.offer .top-icons i img {
+  width: 120px;
+  margin-left: -20px;
+}
+.offer .top-icons h3 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.cards {
+  position: relative;
+}
+.cards .content {
+  padding: 20px 0 0 25px;
+}
+.cards h3 {
+  font-weight: bold;
+  text-transform: capitalize;
+  text-shadow: 1px 1px 2px #000;
+}
+/* .cards button{
+    color: #ffc800;
+    padding: 5px 35px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px #000;
+}
+.cards button:hover{
+    color: #fff;
+} */
+
+/* ____________________________________________________________ */
+
+/* .Delicious h2{
+    font-size: 50px;
+    padding: 8px;
+    font-weight: bold;
+    border-bottom: 2px solid #ffc800;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+} */
+
+.Delicious .card h5 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.Delicious .card .price,
+.main-banner .card .price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-banner .card:hover,
+.Delicious .card:hover {
+  background-color: #ffc800;
+  cursor: pointer;
+  transition: 0.9s;
+}
+
+/* ________________________________________________-- */
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/banner.png") center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.banner .content {
+  padding: 100px;
+  color: #ffc800;
+  text-align: center;
+}
+
+/* .banner .content h2{
+    font-size: 50px;
+    padding: 8px;
+    font-weight: bold;
+    border-bottom: 2px solid #ffc800;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 1px #000;
+} */
+/* .banner .content button{
+    padding: 5px 35px;
+    color: #ffc800;
+    font-size: 18px;
+    font-weight: 400;
+    transition: .9s;
+    text-transform: capitalize;
+} */
+/* .banner .content button:hover{
+    color: #fff;
+} */
+.main-banner .photo {
+  cursor: pointer;
+}
+.main-banner .photo:hover {
+  transform: translateY(-20px);
+  transition: 1.3s ease;
+}
+
+/* ________________________________________________-- */
+
+.about .content p {
+  text-align: justify;
+  line-height: 30px;
+}
+
+/* __________________________________________-____ */
+
+.contact {
+  margin: 70px 0 70px 0;
+}
+.contact input::placeholder {
+  color: #000;
+  font-weight: 700;
+  font-size: 17px;
+}
+.contact .content {
+  border: 2px solid #ffc800;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.contact button {
+  margin: 20px 0;
+  color: #000;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.contact button:hover {
+  color: #fff;
+}
+.contact .icons i {
+  padding: 20px 0;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffc800;
+}
+.contact .icons i span {
+  font-family: "Dancing Script", cursive;
+  margin-left: 7px;
+}
+
+/* _____________________________________________- */
+
+footer {
+  background-color: #ffc800;
+  /* height: 60vh; */
+  color: #fff;
+}
+
+footer .footer-top {
+  width: 100%;
+  max-width: 100%;
+  background: linear-gradient(110deg, #000 68%, #ffc800 32%);
+  padding: 70px 0;
+}
+
+footer .footer-top .column-one {
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: justify;
+  /* margin-right:30px; */
+}
+
+footer .footer-top .logo {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+footer .footer-top .logo img {
+  margin-bottom: 13px;
+}
+
+footer .footer-top .column-two {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-top .column-two a {
+  padding: 3px 0;
+}
+footer .footer-top .column-three a i {
+  font-size: 20px;
+  transition: 0.6s ease;
+}
+
+footer .footer-top .column-three a i:hover {
+  color: #000;
+}
